@@ -1,0 +1,44 @@
+body{
+    background-color: rgb(21, 21, 21);
+    color: white;
+}
+#root{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+.header{
+    margin: 10px 0px 100px;
+    font-size: 30px;
+}
+.timer{
+    border: 1px solid red;
+    padding: 10px;
+    border-radius: 10px;
+    text-align: center;
+}
+.controls button{
+    border: none;
+    color: white;
+    font-weight: 600;
+    padding: 7px 15px;
+    border-radius: 10px;
+    margin: 50px 10px;
+}
+.footer{
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translate(-50%);
+}   
+
+@media screen and (max-width: 480px) {
+    .header{
+        margin: 20px 0px 150px;
+        font-size: 35px;
+    }
+    .footer{
+        bottom: 20px;
+    }
+}
