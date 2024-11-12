@@ -11,9 +11,6 @@ export default function StopWatch() {
                 setTime((t) => t + 10); 
               }, 10);
         }
-        else{
-            clearInterval(interval);
-        }
           
         return () => clearInterval(interval);
     }, [runStatus]);
